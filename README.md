@@ -18,17 +18,25 @@ sudo mv ghs /usr/local/bin/
 ```bash
 ghs add
 # Interactive setup for new GitHub account
+# - Set account alias, username, name, email
+# - Configure SSH key (auto-generate if needed)
+# - Link GPG key if available
 ```
 
 ### Clone Repository
 ```bash
 # Clone repository and auto-configure if it's yours
+# - Uses SSH configuration
+# - Sets up Git user info
+# - Configures GPG signing if key exists
 ghs clone https://github.com/owner/repo.git
 ```
 
 ### Switch Account
 ```bash
-# Switch repository to use specified account
+# Switch repository configuration:
+# - Updates Git user info
+# - Sets GPG signing key if available
 cd your-repository
 ghs switch work
 ```
