@@ -4,6 +4,12 @@ A command-line tool for managing multiple GitHub accounts on a single machine.
 
 ## Installation
 
+Using Go:
+```bash
+go install github.com/catoncat/ghs@latest
+```
+
+Or build from source:
 ```bash
 # Build the program
 go build -o ghs
