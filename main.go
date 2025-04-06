@@ -91,7 +91,6 @@ func updateSSHConfig(accounts map[string]GitHubAccount) error {
 	defer os.Remove(tmpFile.Name())
 
 	// Parse existing config to find our managed section
-	var managedConfig string
 	var otherConfig string
 	if len(existingConfig) > 0 {
 		lines := strings.Split(string(existingConfig), "\n")
